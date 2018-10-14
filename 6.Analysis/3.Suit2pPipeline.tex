@@ -30,7 +30,7 @@ The third stage amounts to the quality control of the classification, distinguis
 \end{figure}
 
 Finally, the fourth stage of the pipeline outputs, for each ROI, a single calcium fluorescence time-varying signal. Again, this signal is corrected for the neuropil contamination signals. Furthermore, the spike train - the action potential sequence - that causes this signal is estimated, by use of a fitting model. 
-A model is used for the uncorrected fluorescence $\vec{F}_i$, with a contribution by the convolution of the spike train $\vec{s}_i \geq 0$ with the calcium response kernel $\vec{k}_i$, a scalled neuropil and the noise:
+A model is used for the uncorrected fluorescence $\vec{F}_i$, with a contribution by the convolution of the spike train $\vec{s}_i \geq 0$ with the calcium response kernel $\vec{k}_i$, a scaled neuropil and the noise:
 
 \begin{equation}
     \vec{F}_i(t) = [\vec{s}_i * \vec{k}_i](t) + c_i \vec{N}_i (t) + noise
