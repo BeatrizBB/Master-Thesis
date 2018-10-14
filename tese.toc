@@ -139,18 +139,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.4.3.G}Interactions between surround orientation alignment and surround-center relative orientation effects}{80}{subsubsection.7.4.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3.H}Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}{81}{subsubsection.7.4.3.8}
+\contentsline {subsubsection}{\numberline {7.4.3.H}Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}{82}{subsubsection.7.4.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3.I}Surround direction alignment effect (direction and position)}{83}{subsubsection.7.4.3.9}
+\contentsline {subsubsection}{\numberline {7.4.3.I}Surround direction alignment effect (direction and position)}{84}{subsubsection.7.4.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3.J}Surround and center relative direction effect}{83}{subsubsection.7.4.3.10}
+\contentsline {subsubsection}{\numberline {7.4.3.J}Surround and center relative direction effect}{85}{subsubsection.7.4.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3.K}Interactions between direction alignment, surround-center relative direction effects and center DS preference}{84}{subsubsection.7.4.3.11}
+\contentsline {subsubsection}{\numberline {7.4.3.K}Interactions between direction alignment, surround-center relative direction effects and center DS preference}{86}{subsubsection.7.4.3.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3.L}Surround-center order effect (position and center direction) and center DS preferrence}{85}{subsubsection.7.4.3.12}
+\contentsline {subsubsection}{\numberline {7.4.3.L}Surround-center order effect (position and center direction) and center DS preferrence}{87}{subsubsection.7.4.3.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Discussion and Conclusions}{86}{chapter.8}
+\contentsline {subsubsection}{\numberline {7.4.3.M}Significant average $\Delta SMI$ effects overview}{88}{subsubsection.7.4.3.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{A-1}{section*.82}
+\contentsline {chapter}{\numberline {8}Discussion and Conclusions}{89}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{A-1}{section*.85}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Title of AppendixA}{A-1}{appendix.A}

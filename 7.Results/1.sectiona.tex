@@ -314,7 +314,7 @@ For each of these comparisons, the intended outputs are both the effect's streng
 
 \item Next, we compare the responses between the two configuration sets, within a scatter plot (bottom first panel of image \ref{1}).
 
-\item Then, we compare the SM indexes ($SMI$) of the pooled ROIs - a measurement of the surround modulatory effect strenght-, in a scatter-plot, for each configuration set (bottom, second panel of image \ref{1}; second panel of the other comparison images). For every stimuli surround-center condition, one can compute:
+\item Then, we compare the SM indexes ($SMI$) of the pooled ROIs - a measurement of the surround modulatory effect strenght-, in a scatter-plot, for each configuration set (bottom, second panel of image \ref{1}; second panel of the other comparison images). The average resulted is also marked with standard deviation error bars. For every stimuli surround-center condition, one can compute:
 
 \begin{equation}
 SMI_a=\dfrac{\bar{R_{a}}-\bar{R_C}}{\bar{R_a}+\bar{R_C}}
@@ -344,7 +344,7 @@ We start with the surround number effect: We find a large and significant differ
 
 Across comparisons, we consistently found that two surround conditions held the most differentiated effects. This was a noted result, and thus we next perform the comparisons, when possible, with the 2S+C stimuli sets.
 
-We disregard the intermediate panels in the next comparison plots. 
+We disregard the intermediate panels 1, 2 and 4 in the next comparison plots. 
 
 \subsubsection{Surround-RF distance effect and Surround position effect}
 
@@ -411,7 +411,7 @@ Combining position and orientation surround effects, we regard the surround orie
 
 \subsubsection{Center and surround relative orientation effect, with center OS preference}
 
-Now regarding as well the center gratings orientation of movement, relative to the surround's, we assess the Center-surround relative orientation effect (figure \ref{7}). A significant large result is observed: Iso-oriented surround suppresses tendentiously more than cross-oriented surround gratings.
+Now regarding as well the center gratings orientation of movement, relative to the surrounds, we assess the center-surround (C-S) relative orientation effect (figure \ref{7}). A significant large result is observed: Iso-oriented surround suppresses tendentiously more than cross-oriented surround gratings.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/7.png} 
 \caption{Relative orientation effect: iso-oriented versus cross-oriented surround, with center moving in the most responsive direction and double surround conditions;  $n=788$, 8 pooled conditions per configuration set.} 
@@ -434,101 +434,171 @@ The same comparison is then performed for OS only cells, when the center is in t
 
 We now pool different conditions within the orientation alignment and the relative orientation effects, to investigate interaction effects between these two factors.
 
-First, we take
+First, we take the collinear versus flanking effects, for iso-oriented stimuli (figure \ref{10}). We obtain a large significant average $\Delta SMI$ result, for higher colinear suppression.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/10.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for iso-oriented center-surround: colinear versus flanking surround, with center moving in the most responsive direction and double surround conditions;  $n=788$, 4 pooled conditions per configuration set.} \label{10} 
 \end{figure}
+
+Then, we regard the collinear versus flanking effects, for cross-oriented stimuli (figure \ref{11}). A substantial differential trend is portrayed, again in favour of higher collinear suppression. However, when Bonferroni-correcting, the effect does no amount to be significant.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/11.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for cross-oriented center-surround: colinear versus flanking surround, with center moving in the most responsive direction and double surround conditions;  $n=788$, 4 pooled conditions per configuration set.} \label{11} 
 \end{figure}
 
-\begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/popPlots_VisROIs_Cor_2SalignmentAngle.png} 
-%\caption{26_popPlots_VisROIs_Cor_2SalignmentAngle} 
+In this way, we regard the SMIs of the four configuration sets jointly \ref{anova1} as four \textit{groups}: iso-oriented and collinear, iso-oriented and flanking, cross-oriented and collinear, cross-oriented and flanking.
+
+\begin{figure}[H] \centering \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/popPlots_VisROIs_Cor_2SalignmentAngle.png} 
+\caption{Orientation alignment and center-surround relative orientations effects. SMI per combined condition, for the same configuration sets as in figures \ref{10} and \ref{11}. Error bars correspond to the standard deviations.} 
+\label{anova1}
 \end{figure}
 
-%\begin{table}[H]
-%\begin{center}\par
-%\scalebox{0.85}{
-%\begin{tabular}{c|cccccccccccccccccccccccccc}
-%\hline 
-% 
-%    
-%\multicolumn{1}{c}{Feature} & Value \\
-%           
-%           \hline
-%           \hline
-%
-%\multicolumn{1}{c}{stimulus size (º)} & 30 \\
-%\multicolumn{1}{c}{stimulus center (º)} & [0, 0] \\
-%\multicolumn{1}{c}{stim directions (º)} & [0 45 90 135 180 225 270 315] \\
-%\multicolumn{1}{c}{spatial frequency (/º)} & [0.02 0.04] \\
-%\multicolumn{1}{c}{temporal frequency (Hz)}& [0.5 1] \\
-%\multicolumn{1}{c}{dark, stim, background light} & [0 204 102] \\
-%\hline
-%        
-%\end{tabular}}
-% \caption{Configurations regarding the tuning mapping protocol stimuli properties.}
-%    \vspace{-5mm}
-%    \label{table:tuning}
-%\end{center}
-%\end{table}
+A two-way ANOVA was performed to assess how much of the data's $SMI$ variance each factor explained, as well as the interaction effect between the two of those factors. The results are in table \ref{tab:anova1}: 
+
+Here, for each source row, the mean square $MS=\dfrac{\sum_{i=1}^n(y_i-\bar{y})^2}{dof}$ is first indicated, with n the number of ROIs, $y_i$ the SMI of the ith ROI, $\bar{y}$ the mean of the $n$ ROIs and dof the degrees of freedom associated with the source (1 for each factor, 3148 for the error); 
+
+The second row presents the value of the $F$ statistic used to assess if there is a relationship between the means and the factor, given by the ratio between the source's mean squares ($MS_s$) and the error mean squares ($MS_e$); 
+
+Finally, the third shows the p-value for factors and for interaction of factors, given by the probability of the F-test being larger than that value $F=\dfrac{MS_s}{MS_e}$. For a given source or interaction, a sufficiently small p-value indicates that that source significantly affects the mean values of $SMI$. 
+
+We find that both the alignment, the angle and the interactive factor affect the distribution significantly. From the $F$ values, we find that the larger contribution comes from the orientation alignment effect, followed by the relative orientation and then by the interactive term.
+
+\begin{table}[H]
+\begin{center}\par
+\scalebox{0.85}{
+\begin{tabular}{c|cccccccccccccccccccccccccc}
+\hline 
+ 
+    
+\multicolumn{1}{c}{Source of variability} & MS & F & p-value\\
+           
+           \hline
+           \hline
+
+\multicolumn{1}{c}{Orientation alignment} &2.6861 & 36.73 & 0 \\
+\multicolumn{1}{c}{C-S relative orientation} &1.5627& 21.37 & 0\\
+\multicolumn{1}{c}{Or alignment and C-S relative Or} & 0.4121 & 5.64 & 0.0177 \\
+\multicolumn{1}{c}{Error}  0.07313\\
+\hline
+        
+\end{tabular}}
+ \caption{Two-way ANOVA results for the collinear versus flanking surround effect and iso-oriented versus cross-oriented C-S effect, and interactions.}
+    \vspace{-5mm}
+    \label{table1}
+\end{center}
+\end{table}
 
 \subsubsection{Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}
 
+Keeping with the orientation alignment and center-surround relative orientation effects, we now focus also on the influence of the orientation selectivity of the ROI.
+
+First, we assess the collinear versus flanking effects, for iso-oriented center-surround, for OS cells only, with the center gratings moving in the preferred orientation of the neuron (figure \ref{12}). We obtain a large, significant result of collinear surround stimuli suppressing more than flanking conditions.
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/12.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for iso-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the preferred orientation and double surround conditions;  $n=472$, 4 pooled conditions per configuration set.} \label{12} 
 \end{figure}
+
+Then we investigate the collinear versus flanking effects, for cross-oriented center-surround, for OS cells only, with the center gratings moving in the preferred orientation of the neuron as well (figure \ref{13}). The differential effect shows a large trend for suppressing more collinear than flanking, but when corrected for multivariate analysis, the correspondent p-value did not hold significance.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/13.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for cross-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the preferred orientation and double surround conditions;  $n=472$, 4 pooled conditions per configuration set.} \label{13} 
 \end{figure}
+
+Then, we first compare the collinear versus flanking conditions, for iso-oriented center-surround, but following now with the anti-preferred direction of movement in the center (\ref{14}). No significant effect is observed.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/14.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for cross-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the anti-preferred orientation and double surround conditions;  $n=68$, 4 pooled conditions per configuration set.} \label{14}  
 \end{figure}
+
+Finally, we compare the collinear versus flanking conditions, for cross-oriented center-surround, with the anti-preferred direction of movement in the center (\ref{15}). Again, no significant average $\Delta SMI$ effect is observed for these conditions.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/15.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Orientation alignment effect, for cross-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the anti-preferred orientation and double surround conditions;  $n=68$, 4 pooled conditions per configuration set.} \label{15}
 \end{figure}
 
+With these results, we compare the SMIs of the eight configuration sets as eight groups, with all the refered combinations of colinear or flanking surrounds, iso-oriented or cross-oriented surrounds, and center in the preferred orientation or in the anti-preferred orientation (figure \ref{anova2}).
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/popPlots_VisROIs_COS_2SalignmentAngle.png} 
-%\caption{31_popPlots_VisROIs_COS_2SalignmentAngle} 
+\caption{Orientation alignment, center-surround relative orientations and center stimulus orientation (in relation to OS preference) effects. SMI per combined condition, for the same configuration sets as in figures \ref{12} to \ref{15}. Error bars correspond to the standard deviations.} \label{anova2}
 \end{figure}
+
+Having assessed these factor combination comparisons, we now use a 3-way ANOVA to investigate the influence of the orientation alignment, relative orientation and orientation selectivity, as well of the possible interaction effects. The results are summarized in table \ref{table2}. The effect of the stimulus in the center (relative to the OS preference) 
+was the factor that explained the data distribution to a greater extent, followed by the orientation alignment effect, the C-S relative orientation effect and the effect of the interaction between the the alignment and the relative orientation effects. Interactions with the center stimulus factor were not significant.
+
+\begin{table}[H]
+\begin{center}\par
+\scalebox{0.85}{
+\begin{tabular}{c|cccccccccccccccccccccccccc}
+\hline 
+    
+\multicolumn{1}{c}{Source of variability} & MS & F & p-value\\
+           
+           \hline
+           \hline
+\multicolumn{1}{c}{Orientation alignment} & 0.9281 & 11.53 & 0.0007 \\
+\multicolumn{1}{c}{C-S relative orientation} & 0.3237 & 4.02 & 0.0450\\
+\multicolumn{1}{c}{Center stimulus Or/pref} & 5.6469 & 70.16 & 0\\
+\multicolumn{1}{c}{Or alignment and relative Or} & 0.4647 & 5.77 & 0.0163 \\
+\multicolumn{1}{c}{Or alignment and C Or/pref} & 0.0050 & 0.06 & 0.8035\\
+\multicolumn{1}{c}{Angle and C Or/pref} & 0.0001 & 0 & 0.9689\\
+\multicolumn{1}{c}{Error} 0.0805\\
+\hline
+        
+\end{tabular}}
+ \caption{Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.}
+    \vspace{-5mm}
+    \label{table2}
+\end{center}
+\end{table}
 
 \subsubsection{Surround direction alignment effect (direction and position)}
 
+Turning to the combined effects of surround direction and position, we regard the surround direction alignment effect \ref{16}. Here, we observe a very slight average trend on $\Delta SMI$, with SMI stronger for when surround stimulus is going towards the center versus when it is going outwards the center. Nevertheless, correcting for multiple comparisons, the result does not prove significant.
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/16.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Direction alignment effect: surround moving towards versus outwards the center, with the center gratings moving in the most responsive direction and single surround conditions;  $n=788$, 4 pooled condition per configuration set.} \label{16}
 \end{figure}
+ 
 
 \subsubsection{Surround and center relative direction effect}
 
+Still with the direction combination effects, we regard the center-surround relative direction effect \ref{17}. Comparing stimuli conditions when the surround is going in the same direction as the center stimulus with when it is going in the opposite direction, neither when center was moving with the most responsive direction, nor when it was DS and moving in the preferred direction \ref{18}.
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/17.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Relative direction effect: surround moving in the same versus the opposite direction of the center, with the center gratings moving in the most responsive direction and double surround conditions;  $n=788$, 2 pooled conditions per configuration set.} \label{17}
 \end{figure}
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/18.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Relative direction effect: surround moving in the same versus the opposite direction of the center, DS ROIs with center in the preferred direction and double surround conditions;  $n=371$, 2 pooled conditions per configuration set.}\label{18}
 \end{figure}
 
 \subsubsection{Interactions between direction alignment, surround-center relative direction effects and center DS preference}
 
+Analogous to the orientation analysis, we now regard the combinations of the direction alignment effect, the S-C relative direction effect and the neuron's DS preference. In this case however, we do not assess the center DS anti-preferred condition, since very few neurons passed the condition for responding in this anti-preferred direction.
+
+With the same direction in the center and in the surround, we first observe the alignment effect (figure \ref{19}). Within this S-C relative direction condition, a visible trend appears for stimuli moving towards the center suppressing more versus stimuli moving outwards the center. This result  is not significant, when corrected for multiple inferences.
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/19.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Direction alignment effect, for same-directed surround and center: surround moving towards versus outwards the center stimulus, with the center gratings moving in the most responsive direction and single surround conditions;  $n=788$, 1 pooled condition per configuration set.} \label{19}
 \end{figure}
+
+The same stimuli conditions, but for DS ROIs with center gratings in the preferred direction, have the same tendency, more strongly so, but again with no significance when the p-value is corrected for multiple comparisons.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/20.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Direction alignment effect, for same-directed surround and center: surround moving towards versus outwards the center stimulus, and single surround conditions; DS ROIs with center in the preferred direction and double surround conditions $n=371$, 1 pooled condition per configuration set.} \label{20}
 \end{figure}
+
+With the opposite direction in the center and in the surround, the alignment effect (figure \ref{21}) now entails convergent versus divergent configurations. No significant average $\Delta SMI$ result is encountered.
+
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/21.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Direction alignment effect, for opposite-directed surround and center: surround convergent versus divergent from the center stimulus with the center gratings moving in the most responsive direction and single surround conditions;  $n=788$, 1 pooled condition per configuration set.} \label{21}
 \end{figure}
 
+These previous conditions are again pooled, but for DS neurons with the preferred direction center gratings movement condition (figure \ref{22}).
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/22.png} 
-%\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
+\caption{Direction alignment effect, for opposite-directed surround and center: surround convergent versus divergent from center stimulus, and single surround conditions; DS ROIs with center in the preferred direction and single surround conditions $n=371$, 1 pooled condition per configuration set.} 
 \end{figure}
 
 %\begin{table}[H]
@@ -560,10 +630,46 @@ First, we take
 
 \subsubsection{Surround-center order effect (position and center direction) and center DS preferrence}
 
+The final section of comparisons regards the position and center direction effect of the surround being in the trailing-edge or in the leading edge of the center gratings movement.
+
+We compare these conditions with all selected neurons (\ref{23}) and then specifying for DS neurons only with center going in the preferred direction (figure \ref{24}). In both cases no significant differential effect was found, even through a trend, visible for instance in the significant ROIs SMI imbalance (middle pannels), and for both cases, aluded to stronger suppression when the surround stimulus was in the trailing edge of the center movement direction.
+
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/23.png} 
 %\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
 \end{figure}
 
-\begin{figure}[H] \centering \includegraphics[width=11cm,height=11cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/24.png} 
+\begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/24.png} 
 %\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
 \end{figure}
+
+\subsubsection{Significant average $\Delta SMI$ effects overview}
+
+In summary, the found significant effects, within the regarded comparisons, corrected for multiple comparisons, were as described in table \ref{table3}:
+
+\begin{table}[H]
+\begin{center}\par
+\scalebox{0.85}{
+\begin{tabular}{c|cccccccccccccccccccccccccc}
+\hline 
+    
+\multicolumn{1}{c}{Configurations} & $\mu$ & p-value\\
+           
+           \hline
+           \hline
+
+\multicolumn{1}{c}{1. single vs. double} & $10.8 \%$ & $2.71 \cdot 10^{-46}$ \\
+\multicolumn{1}{c}{2. colinear vs. flanking} & $-5.3 \%$ & $9.67\cdot 10^{-14}$ \\
+\multicolumn{1}{c}{3. iso-oriented vs. cross-oriented} & $-4.3 \%$ & $1.35\cdot 10^{-12}$\\
+\multicolumn{1}{c}{4. OS pref | iso-oriented vs. cross-oriented} & $-3.6 \%$ & $6.21\cdot 10^{-5}$\\
+\multicolumn{1}{c}{5. iso-oriented | colinear vs. flanking} & $-8.1 \%$ & $2.83\cdot 10^{-13}$\\
+\multicolumn{1}{c}{6. cross-oriented | colinear vs. flanking}& $-3.6 \%$ & $4.21\cdot 10^{-4}$\\
+\multicolumn{1}{c}{7. OS pref | iso-oriented | colinear vs. flanking} & $-9.2 \%$ & $4.64\cdot 10^{-11}$\\
+\multicolumn{1}{c}{8. OS antipref | iso-oriented | colinear vs. flanking} & $-11.7 \%$ & $4.45\cdot 10^{-5}$\\
+\hline
+        
+\end{tabular}}
+ \caption{Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.}
+    \vspace{-5mm}
+    \label{table2}
+\end{center}
+\end{table}
