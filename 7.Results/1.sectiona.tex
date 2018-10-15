@@ -1,88 +1,4 @@
-\section{RF analysis}
-
-At each session's end, a RF analysis was held to assess whether the V1 imaged position corresponded to neurons with RFs centred in the center of the visual field, as these were the fixed intended positions for the subsequent SM spatial structure analysis.
-
-Responses of each ROI were baseline subtracted and analysed trial by trial, mapping each trial's response to the visual field position that the corresponding stimulus was presented at (figure \ref{rfanalysis}, left panels).
-
-Then, these responses were averaged over repetition trials, portraying mean response levels for each of the visual field positions (figure \ref{rfanalysis}, middle panels).
-
-Finally, normalized gray-scale maps were produced for the response maps $R(az, el)$, with $az$ and $el$ the azimuth and elevation retinotopic coordinates, averaging over time on each of the positions' mean trace responses (figure \ref{rfanalysis}, right panels).
-
-\begin{figure}[H] \centering \includegraphics[width=13cm,height=13cm,keepaspectratio]{Figures/7.Results/rf/rf1.png} 
-\caption{Example cell with well centred RF. 
-\newline \textbf{Left:} Individual traces. Each of the 14 trial-type repetition trace response is represented in a different colour, for each of the visual field stimulated region. 
-\newline \textbf{Middle:} Mean traces. Average traces over the 14 repetitions, represented also for each azimuth and elevation center stimulus condition. 
-\newline \textbf{Right:}RF map. Response strengths to each of the stimulus positions, in a gray-scaled colour map.}
-\label{rfanalysis}
-\end{figure}
-
-Each of these neurons' response maps was fitted to 2D-Gaussian ellipses, using Matlab implementation of the least-squares Levenberg-Marquardt algorithm (as in \cite{Marques2018}):
-
-\begin{dmath}
-R(az,el)=a+b\times \exp \left[ - \left( \dfrac{az-az_0}\times \cos(\theta)+ el-el_0)\times \sin(\theta){\sqrt{2} \times \sigma_1}\right)^2 - \left( \dfrac{-(az-az_0) \times sin \theta + (el-el_0)\times \cos(\theta)}{\sqrt{2} \times \sigma_2}\right)^2\right]
-\end{dmath}
-
-with $(az_0, el_0)$ the 2D Gaussian center coordinates, $\sigma_1$ and $\sigma_2$ the standard deviations of the gaussian across the two dimensions, $\theta$ the rotation angle between the gaussian and the $(az,el)$ axis, $a$ an offset parameter and $b$ an amplitude parameter.
-
-The RF was then defined as the ellipse centred at $(az_0, ele_0)$ and limited by the standard deviations  ($\sigma_1$, $\sigma_2$):
-
-\begin{equation}
-\left[ \left( \dfrac{(az-az_0)\cdot \cos(\theta) + (el-el_0)\cdot \sin(\theta)}{\sigma_1}\right)^2 + \left(\dfrac{-(az-az_0)\cdot \sin(\theta) + (el-el_0)\cdot \cos(\theta)}{\sigma_2}\right)^2\right]=1
-\end{equation}
-
-The subsequent analysis was restricted to fits with $R^2>0.5$, as lower values corresponded to RF unreliable estimations. Within 10 sessions with 4 planes each, across 4 animals, 3168 out of 4198 dataset ROIs ($75\%$) were considered.
-
-Analysing plane by plane, for each animal and session (example planes in figure \ref{ellipses}), one could assess that most of the considered RF centres were placed with similar centres within the retinotopical space, as theoretically expected for the short distances of $200 \times 200) \mu m$ imaged V1 planes. 
-
-Two of the sessions showed very high elevation RFs, and were thus discarded for subsequent analysis, leaving 2772 measured RF cells and a total of 3728 cells ($74\%$ fitted RFs) to be analysed in regards to SM effects.
-
-\begin{figure}[H] \centering \includegraphics[width=13cm,height=13cm,keepaspectratio]{Figures/7.Results/rf/ellipsesAnimal4pos2andpos5.png} 
-\caption{Superimposed 2D gaussian ellipsoidal fits for each neuron in the same plane. Two planes from two different sessions with the same animal are presented as examples.}
-\label{ellipses}
-\end{figure}
-
-\section{Tuning analysis}
-\label{tuningresults}
-
-To validate bpod's tuning protocol, the selected neurons were analysed in regards to their direction (8 directions), spatial (2) and temporal (2) frequencies tuning selectivity.
-
-Neurons in V1 can have orientation selectivity (\cite{Hubel1959}, \cite{Hubel1962}), that is, respond more strongly to a preferred orientation than to any other orientation. For mice, these orientation-selective (OS) cells are not organized into functional columns as they are for carnivores and primates (\cite{Hubel1962}, \cite{Hubel1968}), yet they do present strong orientation selectivity (\cite{Girman1999}, \cite{Ohki2005}). 
-
-Moreover, a subset of  OS cells are also direction-selective (DS): these respond most strongly to a preferred direction than to any other.
-
-For orientation analysis, responses of opposite directions are averaged together, and ploted on polar coordinates (figures \ref{tuninganalysisOS} and \ref{tuninganalysisDS}). The vector sum of responses at each individual trial (combining the trials for each of the same orientation opposed directions) then forms the \textit{orientation vector} of that trial. The orientation vectors for all trials then exhibit the cell's orientation tuning properties.
-In the analogous way, for direction analysis, each trial measurement is binned to different direction labels, and the vector sum of the responses at individual directions then amounts to a direction vector for each trial. Direction vectors for all trials represent the cell's direction tuning properties.
-
-Statistical significance is assessed with vector-based Hotelling's $t^2$-tests with confidence of 95\% in this project's case, as suggested by examinations in \cite{Mazurek2014}, to ask whether the 2D mean of the distribution of orientation and or direction vectors differ from (0,0).
- 
- For any orientation, if the responses to a given orientation are significantly higher than responses to any other orientation, then the former is called the neuron's preferred orientation. This differential effect can be measured with an orientation selectivity index (OSI), for the preferred orientation response in the considered space. With  $R_{pref_or}$ the responses to the preferred orientation and $R_{orth}$ the responses to the orientation orthogonal to the preferred:
-\begin{equation}
-\text{OSI}= \dfrac{R_{pref \_or} - R_{orth}}{R_{pref \_or} + R_{orth}}
-\end{equation}
-
-Similarly, in the direction space, a preferred direction can also be determined for neurons that have significantly higher responses in one direction than they do in the null direction relative to the former. A DSI can be computed, for the direction doublet:
-
-\begin{equation}
-\text{DSI}=\dfrac{R_{pref} - R_{null}}{R_{pref} + R_{null}}
-\end{equation}
-
-In regards to the spatial and frequency tuning, here we used a restricted $(2 \times 2)$ space and found as expected (\cite{Whichpapershowsthis?}) that for most cells, in this space, the preferred spatial frequency was of 0.04 cycles per degree and the preferred temporal frequency was at 1 Hz. These were the frequency specifications used in both the RF protocol and the SM protocol.
-
-Here, we present two example cell responses for the different stimulus conditions in the tuning protocol: an OS cell (figure \ref{tuninganalysisOS}) and a DS cell (figure \ref{tuninganalysisDS}).
-
-\begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/tuning/MF379_pos2_p3_ROI0051.png} 
-\caption{Tuning analysis for an example OS cell. Preferred $SF=0.04 cpd$, $TF=1 Hz$, up direction and vertical orientation. $DSI=1$ ($p=1.87 \cdot 10^{-5}$), $OSI=0.967$ ($p=3.4 \cdot 10^{-4}$).}
-\label{tuninganalysisOS}
-\end{figure}
-
-\begin{figure}[H] \centering \includegraphics[width=12.5cm,height=12.5cm,keepaspectratio]{Figures/7.Results/tuning/CM006_pos1_p4_ROI0138.png} 
-\caption{Tuning analysis for an example DS cell. Preferred $SF=0.04 cpd$, $TF=1 Hz$, temporal direction and horizontal orientation. DSI=0.393 ($p=6.05 \cdot 10^{-5}$), OSI=1 ($p=6.05 \cdot 10^{-5}$).}
-\label{tuninganalysisDS}
-\end{figure}
-
 \section{SM analysis - individual cells}
-
-SM analysis started with the mapping of responses during the protocol to corresponding stimuli types, from the 124 possible ones. During the experiments, 20 repetitions were held for most sessions. However, in the analysis, it was noticeable that responses [GET IMAGE] decreased a lot in the second part of the protocol, possibly due to anaesthesia cumulative effects and/or adaptation to the stimuli. Therefore, to prevent from adding noise to averaged measurements, the subsequent analysis was using only the 10 first repetitions of each trial type.
 
 We start with individual cell example analysis, and present hereby two example cells' SM main effects.
 
@@ -92,25 +8,9 @@ We start with individual cell example analysis, and present hereby two example c
 We first consider, for simplification, a DS example cell: This cell only responds significantly to one of the four center directions used in this protocol.
 
 Baseline-subtracted response strength for each trial by order of appearance can be plotted against time (stimulus onset at 0.5s), showing no visible structure (image \ref{individualDStrials}, left). 
-Trials were then averaged by trial type and these were ordered in a given structure:
+Trials were then averaged by trial types.
 
-\begin{itemize}
-\item \textbf{[1:4]} S1T, at the four directions (up, temporal, down, nasal); 
-\item \textbf{[5:8]} C, analogous to above; 
-\item \textbf{[9:12]} S1B, analogous to above;
-\item \textbf{[13:16]} S1L, analogous to above;
-\item \textbf{[17:20]} S1R, analogous to above; 
-21:36 S1T+C, with first quarter (21:24) center up and surround in the 4 directions (up, temporal, down, nasal), second quarter (25:28) center temporal and surround in the 4 directions, third quarter (29:32) center down and surround in the 4 directions, and fourth quarter (33:36) center nasal and surround in the 4 directions;
-\item \textbf{[37:52]} S1B+C, analogous to above;
-\item \textbf{[53:68]} S1L+C, analogous to above;
-\item \textbf{[69:84]} S1R+C, analogous to above;
-\item \textbf{[85:100]} S2H+C, with first quarter (85:100) center up and the two horizontally positioned surrounds in the same of 4 directions (up, temporal, down, nasal), second quarter (89:92) center temporal and surrounds in the same of 4 directions, third quarter (93:96) center down and surrounds in the same of 4 directions, and fourth quarter (97:100) center nasal and surrounds in the the same of 4 directions;
-\item \textbf{[101:104]} S2H, at the four directions (up, temporal, down, nasal);
-\item \textbf{[105:120]} S2V+C, with first quarter (105:108) center up and the two vertically positioned surrounds in the same of 4 directions (up, temporal, down, nasal), second quarter (109:112) center temporal and surrounds in the same of 4 directions, third quarter (113:116) center down and surrounds in the same of 4 directions, and fourth quarter (117:120) center nasal and surrounds in the the same of 4 directions;
-\item \textbf{[121:124]} S2V, at the four directions (up, temporal, down, nasal);
-\end{itemize}
-
-With this, when plotted per trial type average baseline-subtracted responses over repetitions as a function of time (figure \ref{individualDStrials}, right), we can denote that given sets of stimuli types evoke higher responses than others, with stronger spike responses being usually relative to the direction selective center-only response and to the four contiguous sets of the same center preferred direction with surround, as expected. Moreover, we also denote that responses are fixed to stimulus onset, validating appropriate synchronization in the experimental setup.
+When plotted per trial type average baseline-subtracted responses over repetitions as a function of time (figure \ref{individualDStrials}, right), we can denote that given sets of stimuli types evoke higher responses than others, with stronger spike responses being usually relative to the direction selective center-only response and to the four contiguous sets of the same center preferred direction with surround, as expected. Moreover, we also denote that responses are fixed to stimulus onset, validating appropriate synchronization in the experimental setup.
 
 \begin{figure}[H] \centering \includegraphics[width=14cm,height=14cm,keepaspectratio]{Figures/7.Results/individualSM/roi_29_mf379_pos5/roi29.png} 
 \caption{SM protocol responses (dF/F) over time (s), for the example DS cell. Responses were baseline subtracted (0.5s) and stimulus onset centred at 0 s.
@@ -133,7 +33,7 @@ In figure \ref{DSexamplecellcenter}, we observe that this cell portrays a large 
 \label{DSexamplecellsurrounds}}
 \end{figure}
 
-In figure \ref{DSexamplecellSM} some SM results are shown. Only when center grating stimulation was on the up direction did any significant response hold (for simplicity not shown here, no responses were present either for horizontally or vertically positioned surrounds with non up-oriented center stimuli, supplementary figure \ref{s1}).
+In figure \ref{DSexamplecellSM} some SM results are shown. Only when center grating stimulation was on the up direction did any significant response hold (for simplicity not shown here, no responses were present either for horizontally or vertically positioned surrounds with non up-oriented center stimuli).
 
 In this case, only surround suppression was present. Qualitatively, highest suppression is manifested for when surround stimulation is on the right, going in the down direction, followed by when it is also on the right, but going in the up direction and when it is going nasally in the top position.
 
@@ -155,8 +55,7 @@ Averaging the S1+C conditions over all of the center directions we find small re
 
 We present now the same sort of analysis for an OS example cell.
 
-Again, in figure \ref{individualOStrials}, we see that plotting responses ordered chronologically does not show a response structure, but when these spikes are organized by stimulus type, here in the same number as explained in the above subsection, evident structure appears.
-
+Again, in figure \ref{individualOStrials}, we see that plotting responses ordered chronologically does not show a response structure, but when these spikes are organized by stimulus type, here in the same number as explained in the \ref{Methods} section, evident structure appears.
 \begin{figure}[H] \centering \includegraphics[width=14cm,height=14cm,keepaspectratio]{Figures/7.Results/individualSM/roi_46_mf379_pos2/roi46.png} 
 \caption{SM protocol responses (dF/F) over time (s), for the example OS cell. The responses were baseline subtracted (0.5 s) and the stimulus onset was at 0 s.
 \newline \textbf{Left:} 1240 trial responses (10 repetitions, 124 trial types) as chronologically presented to the subjects, over the trial length. No structure is apparent.
@@ -188,7 +87,7 @@ S1L+C, S1R+C, S1T+C and S1B+C respectively at each column, for nasal center cond
 
 \section{SM analysis - cells population}
 
-After last section's scattered analysis, we follow with more general, systematic analysis, by investigating average effects on all of the cells population.
+After last section's individual cell analysis, we follow with general, systematic analysis, by investigating average effects on all of the cells population.
 
 \subsection{Data ROI groups}
 
@@ -339,7 +238,7 @@ However, in a more statistically conservative approach, considering the multi-in
 We start with the surround number effect: We find a large and significant differential effect of higher suppression for double surround conditions over one surround condition. Moreover, suppression was also notable, for all of the conditions, in particular for the 2S+C pooled conditions.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/1.png} 
-\caption{Surround number effect: Single surround versus double surround, with center gratings moving in the most responsive direction; $n=788$, 16 (single) and 8 (double) pooled conditions per configuration set.} 
+\caption{Surround number effect: Single surround versus double surround, with center gratings moving in the most responsive direction; $n=788$, 16 (single) and 8 (double) pooled conditions per configuration set.} \label{1}
 \end{figure}
 
 Across comparisons, we consistently found that two surround conditions held the most differentiated effects. This was a noted result, and thus we next perform the comparisons, when possible, with the 2S+C stimuli sets.
@@ -453,7 +352,7 @@ In this way, we regard the SMIs of the four configuration sets jointly \ref{anov
 \label{anova1}
 \end{figure}
 
-A two-way ANOVA was performed to assess how much of the data's $SMI$ variance each factor explained, as well as the interaction effect between the two of those factors. The results are in table \ref{tab:anova1}: 
+A two-way ANOVA was performed to assess how much of the data's $SMI$ variance each factor explained, as well as the interaction effect between the two of those factors. The results are in table \ref{table1}: 
 
 Here, for each source row, the mean square $MS=\dfrac{\sum_{i=1}^n(y_i-\bar{y})^2}{dof}$ is first indicated, with n the number of ROIs, $y_i$ the SMI of the ith ROI, $\bar{y}$ the mean of the $n$ ROIs and dof the degrees of freedom associated with the source (1 for each factor, 3148 for the error); 
 
@@ -478,7 +377,7 @@ We find that both the alignment, the angle and the interactive factor affect the
 \multicolumn{1}{c}{Orientation alignment} &2.6861 & 36.73 & 0 \\
 \multicolumn{1}{c}{C-S relative orientation} &1.5627& 21.37 & 0\\
 \multicolumn{1}{c}{Or alignment and C-S relative Or} & 0.4121 & 5.64 & 0.0177 \\
-\multicolumn{1}{c}{Error}  0.07313\\
+\multicolumn{1}{c}{Error} & 0.07313\\
 \hline
         
 \end{tabular}}
@@ -504,7 +403,7 @@ Then we investigate the collinear versus flanking effects, for cross-oriented ce
 \caption{Orientation alignment effect, for cross-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the preferred orientation and double surround conditions;  $n=472$, 4 pooled conditions per configuration set.} \label{13} 
 \end{figure}
 
-Then, we first compare the collinear versus flanking conditions, for iso-oriented center-surround, but following now with the anti-preferred direction of movement in the center (\ref{14}). No significant effect is observed.
+Then, we first compare the collinear versus flanking conditions, for iso-oriented center-surround, but following now with the anti-preferred direction of movement in the center (\ref{14}). A large significant result was found, for again suppressing more in the collinear conditions than in the flanking conditions.
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/14.png} 
 \caption{Orientation alignment effect, for cross-oriented center-surround: collinear versus flanking surround, OS ROIs with center in the anti-preferred orientation and double surround conditions;  $n=68$, 4 pooled conditions per configuration set.} \label{14}  
@@ -522,8 +421,7 @@ With these results, we compare the SMIs of the eight configuration sets as eight
 \caption{Orientation alignment, center-surround relative orientations and center stimulus orientation (in relation to OS preference) effects. SMI per combined condition, for the same configuration sets as in figures \ref{12} to \ref{15}. Error bars correspond to the standard deviations.} \label{anova2}
 \end{figure}
 
-Having assessed these factor combination comparisons, we now use a 3-way ANOVA to investigate the influence of the orientation alignment, relative orientation and orientation selectivity, as well of the possible interaction effects. The results are summarized in table \ref{table2}. The effect of the stimulus in the center (relative to the OS preference) 
-was the factor that explained the data distribution to a greater extent, followed by the orientation alignment effect, the C-S relative orientation effect and the effect of the interaction between the the alignment and the relative orientation effects. Interactions with the center stimulus factor were not significant.
+Having assessed these factor combination comparisons, we now use a 3-way ANOVA to investigate the influence of the orientation alignment, relative orientation and orientation selectivity, as well of the possible interaction effects. The results are summarized in table \ref{table2}. The effect of the stimulus in the center (relative to the OS preference) was the factor that explained the data distribution to a greater extent, followed by the orientation alignment effect, the C-S relative orientation effect and the effect of the interaction between the the alignment and the relative orientation effects. Interactions with the center stimulus factor were not significant.
 
 \begin{table}[H]
 \begin{center}\par
@@ -541,7 +439,7 @@ was the factor that explained the data distribution to a greater extent, followe
 \multicolumn{1}{c}{Or alignment and relative Or} & 0.4647 & 5.77 & 0.0163 \\
 \multicolumn{1}{c}{Or alignment and C Or/pref} & 0.0050 & 0.06 & 0.8035\\
 \multicolumn{1}{c}{Angle and C Or/pref} & 0.0001 & 0 & 0.9689\\
-\multicolumn{1}{c}{Error} 0.0805\\
+\multicolumn{1}{c}{Error} & 0.0805\\
 \hline
         
 \end{tabular}}
@@ -598,7 +496,7 @@ With the opposite direction in the center and in the surround, the alignment eff
 These previous conditions are again pooled, but for DS neurons with the preferred direction center gratings movement condition (figure \ref{22}).
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/22.png} 
-\caption{Direction alignment effect, for opposite-directed surround and center: surround convergent versus divergent from center stimulus, and single surround conditions; DS ROIs with center in the preferred direction and single surround conditions $n=371$, 1 pooled condition per configuration set.} 
+\caption{Direction alignment effect, for opposite-directed surround and center: surround convergent versus divergent from center stimulus, and single surround conditions; DS ROIs with center in the preferred direction and single surround conditions $n=371$, 1 pooled condition per configuration set.} \label{22}
 \end{figure}
 
 %\begin{table}[H]
@@ -636,11 +534,11 @@ We compare these conditions with all selected neurons (\ref{23}) and then specif
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/23.png} 
 %\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
-\end{figure}
+\end{figure}\label{23}
 
 \begin{figure}[H] \centering \includegraphics[width=12cm,height=12cm,keepaspectratio]{Figures/7.Results/finalPopulation/sel/diagrams/24.png} 
 %\caption{13_popPlots_VisROIs_CprefDir_Snumber} 
-\end{figure}
+\end{figure}\label{24}
 
 \subsubsection{Significant average $\Delta SMI$ effects overview}
 
@@ -668,8 +566,8 @@ In summary, the found significant effects, within the regarded comparisons, corr
 \hline
         
 \end{tabular}}
- \caption{Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.}
+ \caption{Significant comparison population results from the presented here, as selected with multivariate Bonferroni correction.}
     \vspace{-5mm}
-    \label{table2}
+    \label{table3}
 \end{center}
 \end{table}

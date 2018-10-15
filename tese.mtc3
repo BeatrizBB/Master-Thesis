@@ -1,8 +1,5 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Imaging techniques and intrinsic signals: acquiring functional maps of neuronal activity}{\reset@font\mtcSfont 21}{section.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Intrinsic Signal Optical Imaging: the technique}{\reset@font\mtcSSfont 22}{subsection.3.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Calcium indicators and transgenic lines}{\reset@font\mtcSfont 23}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Imaging techniques: Two photon laser-scanning microscopy}{\reset@font\mtcSfont 25}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Single-photon Imaging}{\reset@font\mtcSSfont 26}{subsection.3.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Direct Imaging}{\reset@font\mtcSSfont 26}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Confocal laser-scanning microscopy}{\reset@font\mtcSSfont 26}{subsection.3.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.4}Two photon laser-scanning microscopy }{\reset@font\mtcSSfont 27}{subsection.3.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}System's scheme}{\reset@font\mtcSfont 21}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Bpod}{\reset@font\mtcSfont 23}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Motivation and previous system}{\reset@font\mtcSSfont 23}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Bpod Hardware implementation, specifications and alterations}{\reset@font\mtcSSfont 24}{subsection.3.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Software: Governing machine protocols and stimulus presentation}{\reset@font\mtcSfont 25}{section.3.3}}

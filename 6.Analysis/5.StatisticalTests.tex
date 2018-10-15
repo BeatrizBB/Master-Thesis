@@ -1,9 +1,9 @@
-\section{Statistical Tests}
-\label{sec:StatisticalTests}
+\chapter{Statistical Tests}
+\label{chapter:StatisticalTests}
 
 Along the SM analysis, statistical tests were used to test given hypothesis, assess results significance and perform multiple comparisons. These tools were implemented with Matlab ingrained functions (\texttt{signtest}, \texttt{ranksum}, \texttt{anovan}, \texttt{corrcoef} and \texttt{regress}). Here we summarily review these tools and underlying mathematical basis.
 
-\subsection{Two-sided sign-tests}
+\section{Two-sided sign-tests}
 \label{subsec:signtests}
 
 Sign-tests are nonparametric tests, for given independent observations, for the hypothesis that the difference between the correspondent variables has a given median value $\eta_0$. In this work's analysis, the hypothesized median was zero. 
@@ -54,7 +54,7 @@ p = 2 \text{Pr}\left[X \geq Z\right]
 
 and we again reject the null hypothesis $H_0$ if \textit{p} is smaller or equal to a considered significance threshold $\alpha$.
 
-\subsection{Wilcoxon signed rank-sum tests}
+\section{Wilcoxon signed rank-sum tests}
 \label{subsec:subbsectionC}
 
 Wilcoxon signed rank-sum tests are non-parametric tests used when collected data samples $(y_{11},...,y_{n1})$ and $(y_{12},...,y_{n2})$ is expected to be dependent, that is, data is \textit{paired}.
@@ -91,7 +91,7 @@ If $H_0$ is true, Z can be approximated by a normal distribution Z ~ Normal(0,1)
 
 In Matlab's algorithm, continuity correction and tie adjustments are also used, and the tests are carried in an analogous way.
 
-\subsection{N-way analysis of variance}
+\section{N-way analysis of variance}
 \label{subsec:subcsectionC}
 
 An n-way analysis of variance (ANOVA) is an extension on the one-way ANOVA. This conservative statistical tool examines the effect of n categorical independent variables on one continuous dependent variable. This results in not only an estimation of each categorical variable's influence but also assesses the influence of the interactions between these variables.
@@ -136,7 +136,7 @@ $H_0$:$(\alpha \beta \gamma)_{ijk}=0$
 $H_a$: at least one$(\alpha \beta \gamma)_{ijk}\neq 0$
 \end{center}
 
-\subsection{Pearson correlation coefficients}
+\section{Pearson correlation coefficients}
 \label{subsec:subcsectionC}
 
 Correlation coefficients between two random variables A and B measure their linear dependence. For N scalar observations from each variable, the Pearson correlation coefficient is given by:
@@ -149,7 +149,7 @@ with $\mu_A$ and $\sigma_A$ the mean and standard deviation of A, and $\mu_A$ an
 
 In matlab's algorithm, matrices of correlation coefficients are computed and the matrix of p-values for testing the null hypothesis that there is no relationship between the observed phenomena. If these p-values are smaller than the considered $\alpha$ threshold, the correlations are deemed significant.
 
-\subsection{Multiple linear regression}
+\section{Multiple linear regression}
 \label{subsec:subcsectionC}
 
 Linear regression models describe the relationship between a dependent variable $y$, and $K$ independent variable(s) $X$.
@@ -169,12 +169,12 @@ It follows that the fitted linear function is given, for $i=1, ..., n$ by:
 \end{equation}
 
 with $f$ a scalar-valued function of the independent variables, and K the number of independent variables.
-\subsection{Permutation test}
+\section{Permutation test}
 
 When interested on strong null hypothesis, permutation tests can be conducted for assessing sampling distributions. This test builds sampling distributions by resampling the observed data. This is done with no replacement, by simply eliminating the outcome labels on the original sample data and then randomly redistributing the observed values under those same labels. This shuffling process can be repeated to obtain a large number of resamples.
 Significance tests can then be used for the null hypothesis that these resample distributions do not differ from the original distribution.
 
-\subsection{Multivariate comparisons: Holm-Bonferroni method}
+\section{Multivariate comparisons: Holm-Bonferroni method}
 
 Finally, in this work, many comparisons were held on different pools of the dataset. For this reason, the multiple comparisons problem needs to be accounted for: The more statistical inferences that are made simultaneously, the more likely it is for Type I error (false positive) inferences to be made. This issue steams from considering an overall confidence level for the whole set of simultaneous tests, while these threshold levels are to be considered individually. The controlled variable should be the familywise error rate (FWER), the probability of making one or more type-I errors, with a given significance level threshold, $FWER \leq \alpha$.
 

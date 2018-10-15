@@ -1,17 +1,17 @@
 \section{Software: Governing machine protocols and stimulus presentation}
 \label{sec:sectionc}
 
-Bpod's software allows to load user-made protocols and run them within the built-in bpod interface, joined with the protocols' specific GUI windows (IMAGE).
+Bpod's software allows to load user-made protocols and run them within the built-in bpod interface, joined with the protocols' specific GUI windows.
 
 In this project, three protocols were developed for different ends: receptive field mapping, tuning measuring and studying the spatial structure of surround modulation.
 
 Each of these were subsequently used in mice experiments. The produced data was also analysed, validating the method and tool in the three protocols. 
 
-The RF protocol served to find the RF positions after each experimental session and assess if the majority of the measured cells' RFs was centred at the corresponding display monitor center, as desired. Specifically, the obtained RF maps either indicated, in combination with the retinotopy maps, in which directions one should move the objective to correct the imaging position in following sessions or confirmed that the objective and mouse placing was appropriate (SEE CHAPTER). Furthermore, this data was also combined with the SM protocol's results for RF position-dependent analysis of the SM effect (SEE CHAPTER).
+The RF protocol served to find the RF positions after each experimental session and assess if the majority of the measured cells' RFs was centred at the corresponding display monitor center, as desired. Specifically, the obtained RF maps either indicated, in combination with the retinotopy maps, in which directions one should move the objective to correct the imaging position in following sessions or confirmed that the objective and mouse placing was appropriate. Furthermore, this data was also combined with the SM protocol's results for RF position-dependent analysis of the SM effect.
 
-The tuning protocol was implemented to measure the selectivity of cells in a flexible array of conditions. The data collected from this protocol was analysed and some cell's tuning behaviour examples are shown in (SEE CHAPTER). This analysis served to validate the protocol and aided in troubleshooting the SM analysis. Moreover, this protocol was also used to find the RF centred imaging positions during experiments. 
+The tuning protocol was implemented to measure the selectivity of cells in a flexible array of conditions. The data collected from this protocol was analysed and some cell's tuning examples are shown in \ref{cap:Results}. This analysis served to validate the protocol and aided in troubleshooting the SM analysis. Moreover, this protocol was also used to find the RF centred imaging positions during experiments. 
 
-Finally, the SM study was the main focus of this project's experimental component, and the obtained results are presented in (SEE CHAPTER). The implementation of this protocol allows the presentation of any configuration with center and surround moving gratings' patches, in any combination of the four cardinal plus center positions. For this project's purposes, 124 were chosen, in a given set of grating frequencies and stimuli sizes (SEE CHAPTER).
+Finally, the SM study was the main focus of this project's experimental component, and the obtained results are presented in \ref{cap:Results}. The implementation of this protocol allows the presentation of any configuration with center and surround moving gratings' patches, in any combination of the four cardinal plus center positions. For this project's purposes, 124 were chosen, in a given set of grating frequencies and stimuli sizes.
 
 Each of these protocols follows a similar structure of five files, each with different case functions:
 
@@ -25,7 +25,7 @@ Each of these protocols follows a similar structure of five files, each with dif
 
 In bpod's built-in interface, one can set the mouse ID, load the settings to use as default and then call the desired protocol. 
 
-At this point, the main file is called to initiate the protocol: This by its turn calls the GUI initiation function, which initializes the settings variables in a global structure S, in different fields according to the required type of GUI to be used (an edit box, a toggle button, a slider, an edit array, an array display or a push button). This organization allows to then easily initialize handles of each parameter's user interface control, depending on the type of GUI (IMAGES).
+At this point, the main file is called to initiate the protocol: This by its turn calls the GUI initiation function, which initializes the settings variables in a global structure S, in different fields according to the required type of GUI to be used (an edit box, a toggle button, a slider, an edit array, an array display or a push button). This organization allows to then easily initialize handles of each parameter's user interface control, depending on the type of GUI.
 
 In the ScanImage interface at the imaging computer, the appropriate configurations must be set by the user before starting the stimuli and bpod protocol - The user must choose the number and positions of the imaging planes, imaging trigger ports, brightness of the brain recordings displayed, as well as the path and name for the recorded movies. Then, the imaging system can be instructed to await the external triggers that will come from bpod.
 

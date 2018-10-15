@@ -1,10 +1,7 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Animals}{\reset@font\mtcSfont 41}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Visual stimulation}{\reset@font\mtcSfont 41}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Intrinsic signal optical imaging settings}{\reset@font\mtcSfont 42}{section.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Session and trial structure}{\reset@font\mtcSfont 43}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}TPLSM experimental pipeline}{\reset@font\mtcSSfont 43}{subsection.5.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Stimuli presentation structure}{\reset@font\mtcSSfont 45}{subsection.5.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Specifics of the protocol settings and visual stimuli}{\reset@font\mtcSfont 45}{section.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Receptive Field mapping stimuli}{\reset@font\mtcSSfont 46}{subsection.5.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Tunings mapping stimuli}{\reset@font\mtcSSfont 46}{subsection.5.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.3}Surround Modulation stimuli}{\reset@font\mtcSSfont 47}{subsection.5.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Experiment's outputs}{\reset@font\mtcSfont 40}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Images pre-processing: Separating planes and registration}{\reset@font\mtcSfont 41}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Suit2p pipeline}{\reset@font\mtcSfont 42}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Data treatment}{\reset@font\mtcSfont 44}{section.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}RF analysis}{\reset@font\mtcSfont 45}{section.5.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Tuning analysis}{\reset@font\mtcSfont 47}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Surround modulation analysis}{\reset@font\mtcSSfont 48}{subsection.5.6.1}}

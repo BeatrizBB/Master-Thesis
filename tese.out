@@ -1,88 +1,85 @@
 \BOOKMARK [0][]{Title.0}{Title}{}% 1
 \BOOKMARK [0][]{Acknowledgments.0}{Acknowledgments}{}% 2
-\BOOKMARK [0][]{Abstract.0}{Abstract}{}% 3
-\BOOKMARK [0][]{Resumo.0}{Resumo}{}% 4
-\BOOKMARK [0][]{index.0}{Index}{}% 5
-\BOOKMARK [1][]{toc.1}{Contents}{index.0}% 6
-\BOOKMARK [1][]{lof.1}{List of Figures}{index.0}% 7
-\BOOKMARK [1][]{lot.1}{List of Tables}{index.0}% 8
-\BOOKMARK [1][]{loac.1}{List of Acronyms}{index.0}% 9
-\BOOKMARK [1][]{los.1}{List of Symbols}{index.0}% 10
-\BOOKMARK [0][]{chapter.1}{1 Preamble}{}% 11
-\BOOKMARK [1][]{section.1.1}{1.1 A systems neuroscience question: How does the nervous system enable perception of the visual world?}{chapter.1}% 12
-\BOOKMARK [1][]{section.1.2}{1.2 Original Contributions}{chapter.1}% 13
-\BOOKMARK [1][]{section.1.3}{1.3 Thesis Outline}{chapter.1}% 14
-\BOOKMARK [0][]{chapter.2}{2 Theoretical Introduction}{}% 15
-\BOOKMARK [1][]{section.2.1}{2.1 Brain visual pathways}{chapter.2}% 16
-\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 The eye}{section.2.1}% 17
-\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Central Visual Pathways}{section.2.1}% 18
-\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Feedforward: spatial filtering of natural images}{section.2.1}% 19
-\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Feedback pathways and influences}{section.2.1}% 20
-\BOOKMARK [1][]{section.2.2}{2.2 Surround modulation in the visual cortex}{chapter.2}% 21
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 SM non-uniformity}{section.2.2}% 22
-\BOOKMARK [1][]{section.2.3}{2.3 The motivation: feedback organization rules - uncovering the functions of feedback}{chapter.2}% 23
-\BOOKMARK [0][]{chapter.3}{3 Technology}{}% 24
-\BOOKMARK [1][]{section.3.1}{3.1 Imaging techniques and intrinsic signals: acquiring functional maps of neuronal activity}{chapter.3}% 25
-\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Intrinsic Signal Optical Imaging: the technique}{section.3.1}% 26
-\BOOKMARK [1][]{section.3.2}{3.2 Calcium indicators and transgenic lines}{chapter.3}% 27
-\BOOKMARK [1][]{section.3.3}{3.3 Imaging techniques: Two photon laser-scanning microscopy}{chapter.3}% 28
-\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Single-photon Imaging}{section.3.3}% 29
-\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Direct Imaging}{section.3.3}% 30
-\BOOKMARK [2][]{subsection.3.3.3}{3.3.3 Confocal laser-scanning microscopy}{section.3.3}% 31
-\BOOKMARK [2][]{subsection.3.3.4}{3.3.4 Two photon laser-scanning microscopy }{section.3.3}% 32
-\BOOKMARK [0][]{chapter.4}{4 Technical Implementations}{}% 33
-\BOOKMARK [1][]{section.4.1}{4.1 System's scheme}{chapter.4}% 34
-\BOOKMARK [1][]{section.4.2}{4.2 Bpod}{chapter.4}% 35
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Motivation and previous system}{section.4.2}% 36
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Bpod Hardware implementation, specifications and alterations}{section.4.2}% 37
-\BOOKMARK [1][]{section.4.3}{4.3 Software: Governing machine protocols and stimulus presentation}{chapter.4}% 38
-\BOOKMARK [0][]{chapter.5}{5 Experimental Methods}{}% 39
-\BOOKMARK [1][]{section.5.1}{5.1 Animals}{chapter.5}% 40
-\BOOKMARK [1][]{section.5.2}{5.2 Visual stimulation}{chapter.5}% 41
-\BOOKMARK [1][]{section.5.3}{5.3 Intrinsic signal optical imaging settings}{chapter.5}% 42
-\BOOKMARK [1][]{section.5.4}{5.4 Session and trial structure}{chapter.5}% 43
-\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 TPLSM experimental pipeline}{section.5.4}% 44
-\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Stimuli presentation structure}{section.5.4}% 45
-\BOOKMARK [1][]{section.5.5}{5.5 Specifics of the protocol settings and visual stimuli}{chapter.5}% 46
-\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Receptive Field mapping stimuli}{section.5.5}% 47
-\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Tunings mapping stimuli}{section.5.5}% 48
-\BOOKMARK [2][]{subsection.5.5.3}{5.5.3 Surround Modulation stimuli}{section.5.5}% 49
-\BOOKMARK [0][]{chapter.6}{6 Analysis}{}% 50
-\BOOKMARK [1][]{section.6.1}{6.1 Experiment's outputs}{chapter.6}% 51
-\BOOKMARK [1][]{section.6.2}{6.2 Images pre-processing: Separating planes and registration}{chapter.6}% 52
-\BOOKMARK [1][]{section.6.3}{6.3 Suit2p pipeline}{chapter.6}% 53
-\BOOKMARK [1][]{section.6.4}{6.4 Data treatment}{chapter.6}% 54
-\BOOKMARK [1][]{section.6.5}{6.5 Statistical Tests}{chapter.6}% 55
-\BOOKMARK [2][]{subsection.6.5.1}{6.5.1 Two-sided sign-tests}{section.6.5}% 56
-\BOOKMARK [2][]{subsection.6.5.2}{6.5.2 Wilcoxon signed rank-sum tests}{section.6.5}% 57
-\BOOKMARK [2][]{subsection.6.5.3}{6.5.3 N-way analysis of variance}{section.6.5}% 58
-\BOOKMARK [2][]{subsection.6.5.4}{6.5.4 Pearson correlation coefficients}{section.6.5}% 59
-\BOOKMARK [2][]{subsection.6.5.5}{6.5.5 Multiple linear regression}{section.6.5}% 60
-\BOOKMARK [2][]{subsection.6.5.6}{6.5.6 Permutation test}{section.6.5}% 61
-\BOOKMARK [2][]{subsection.6.5.7}{6.5.7 Multivariate comparisons: Holm-Bonferroni method}{section.6.5}% 62
-\BOOKMARK [0][]{chapter.7}{7 Results}{}% 63
-\BOOKMARK [1][]{section.7.1}{7.1 RF analysis}{chapter.7}% 64
-\BOOKMARK [1][]{section.7.2}{7.2 Tuning analysis}{chapter.7}% 65
-\BOOKMARK [1][]{section.7.3}{7.3 SM analysis - individual cells}{chapter.7}% 66
-\BOOKMARK [2][]{subsection.7.3.1}{7.3.1 DS example cell}{section.7.3}% 67
-\BOOKMARK [2][]{subsection.7.3.2}{7.3.2 OS example cell}{section.7.3}% 68
-\BOOKMARK [1][]{section.7.4}{7.4 SM analysis - cells population}{chapter.7}% 69
-\BOOKMARK [2][]{subsection.7.4.1}{7.4.1 Data ROI groups}{section.7.4}% 70
-\BOOKMARK [2][]{subsection.7.4.2}{7.4.2 RF center positions and SM protocol center-only: all population and per animal}{section.7.4}% 71
-\BOOKMARK [2][]{subsection.7.4.3}{7.4.3 Comparisons between conditions}{section.7.4}% 72
-\BOOKMARK [3][]{subsubsection.7.4.3.1}{7.4.3.A Surround number effect}{subsection.7.4.3}% 73
-\BOOKMARK [3][]{subsubsection.7.4.3.2}{7.4.3.B Surround-RF distance effect and Surround position effect}{subsection.7.4.3}% 74
-\BOOKMARK [3][]{subsubsection.7.4.3.3}{7.4.3.C Surround direction effect}{subsection.7.4.3}% 75
-\BOOKMARK [3][]{subsubsection.7.4.3.4}{7.4.3.D Surround orientation effect}{subsection.7.4.3}% 76
-\BOOKMARK [3][]{subsubsection.7.4.3.5}{7.4.3.E Surround orientation alignment effect \(position and orientation\)}{subsection.7.4.3}% 77
-\BOOKMARK [3][]{subsubsection.7.4.3.6}{7.4.3.F Center and surround relative orientation effect, with center OS preference}{subsection.7.4.3}% 78
-\BOOKMARK [3][]{subsubsection.7.4.3.7}{7.4.3.G Interactions between surround orientation alignment and surround-center relative orientation effects}{subsection.7.4.3}% 79
-\BOOKMARK [3][]{subsubsection.7.4.3.8}{7.4.3.H Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}{subsection.7.4.3}% 80
-\BOOKMARK [3][]{subsubsection.7.4.3.9}{7.4.3.I Surround direction alignment effect \(direction and position\)}{subsection.7.4.3}% 81
-\BOOKMARK [3][]{subsubsection.7.4.3.10}{7.4.3.J Surround and center relative direction effect}{subsection.7.4.3}% 82
-\BOOKMARK [3][]{subsubsection.7.4.3.11}{7.4.3.K Interactions between direction alignment, surround-center relative direction effects and center DS preference}{subsection.7.4.3}% 83
-\BOOKMARK [3][]{subsubsection.7.4.3.12}{7.4.3.L Surround-center order effect \(position and center direction\) and center DS preferrence}{subsection.7.4.3}% 84
-\BOOKMARK [3][]{subsubsection.7.4.3.13}{7.4.3.M Significant average SMI effects overview}{subsection.7.4.3}% 85
-\BOOKMARK [0][]{chapter.8}{8 Discussion and Conclusions}{}% 86
-\BOOKMARK [0][]{section*.85}{Bibliography}{}% 87
-\BOOKMARK [0][]{appendix.A}{Appendix A Title of AppendixA}{}% 88
+\BOOKMARK [0][]{index.0}{Index}{}% 3
+\BOOKMARK [1][]{toc.1}{Contents}{index.0}% 4
+\BOOKMARK [1][]{lof.1}{List of Figures}{index.0}% 5
+\BOOKMARK [1][]{lot.1}{List of Tables}{index.0}% 6
+\BOOKMARK [1][]{loac.1}{List of Acronyms}{index.0}% 7
+\BOOKMARK [0][]{chapter.1}{1 Preamble}{}% 8
+\BOOKMARK [1][]{section.1.1}{1.1 A systems neuroscience question: How does the nervous system enable perception of the visual world?}{chapter.1}% 9
+\BOOKMARK [1][]{section.1.2}{1.2 Original Contributions}{chapter.1}% 10
+\BOOKMARK [1][]{section.1.3}{1.3 Thesis Outline}{chapter.1}% 11
+\BOOKMARK [0][]{chapter.2}{2 Theoretical Introduction}{}% 12
+\BOOKMARK [1][]{section.2.1}{2.1 Brain visual pathways}{chapter.2}% 13
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 The eye}{section.2.1}% 14
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Central Visual Pathways}{section.2.1}% 15
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Feedforward: spatial filtering of natural images}{section.2.1}% 16
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Feedback pathways and influences}{section.2.1}% 17
+\BOOKMARK [1][]{section.2.2}{2.2 Surround modulation in the visual cortex}{chapter.2}% 18
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 SM non-uniformity}{section.2.2}% 19
+\BOOKMARK [1][]{section.2.3}{2.3 The motivation: feedback organization rules - uncovering the functions of feedback}{chapter.2}% 20
+\BOOKMARK [0][]{chapter.3}{3 Technical Implementations}{}% 21
+\BOOKMARK [1][]{section.3.1}{3.1 System's scheme}{chapter.3}% 22
+\BOOKMARK [1][]{section.3.2}{3.2 Bpod}{chapter.3}% 23
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Motivation and previous system}{section.3.2}% 24
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Bpod Hardware implementation, specifications and alterations}{section.3.2}% 25
+\BOOKMARK [1][]{section.3.3}{3.3 Software: Governing machine protocols and stimulus presentation}{chapter.3}% 26
+\BOOKMARK [0][]{chapter.4}{4 Experimental Methods}{}% 27
+\BOOKMARK [1][]{section.4.1}{4.1 Animals}{chapter.4}% 28
+\BOOKMARK [1][]{section.4.2}{4.2 Visual stimulation}{chapter.4}% 29
+\BOOKMARK [1][]{section.4.3}{4.3 Intrinsic signal optical imaging settings}{chapter.4}% 30
+\BOOKMARK [1][]{section.4.4}{4.4 Session and trial structure}{chapter.4}% 31
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 TPLSM experimental pipeline}{section.4.4}% 32
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Stimuli presentation structure}{section.4.4}% 33
+\BOOKMARK [1][]{section.4.5}{4.5 Specifics of the protocol settings and visual stimuli}{chapter.4}% 34
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Receptive Field mapping stimuli}{section.4.5}% 35
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Tunings mapping stimuli}{section.4.5}% 36
+\BOOKMARK [2][]{subsection.4.5.3}{4.5.3 Surround Modulation stimuli}{section.4.5}% 37
+\BOOKMARK [0][]{chapter.5}{5 Analysis}{}% 38
+\BOOKMARK [1][]{section.5.1}{5.1 Experiment's outputs}{chapter.5}% 39
+\BOOKMARK [1][]{section.5.2}{5.2 Images pre-processing: Separating planes and registration}{chapter.5}% 40
+\BOOKMARK [1][]{section.5.3}{5.3 Suit2p pipeline}{chapter.5}% 41
+\BOOKMARK [1][]{section.5.4}{5.4 Data treatment}{chapter.5}% 42
+\BOOKMARK [1][]{section.5.5}{5.5 RF analysis}{chapter.5}% 43
+\BOOKMARK [1][]{section.5.6}{5.6 Tuning analysis}{chapter.5}% 44
+\BOOKMARK [2][]{subsection.5.6.1}{5.6.1 Surround modulation analysis}{section.5.6}% 45
+\BOOKMARK [0][]{chapter.6}{6 Results}{}% 46
+\BOOKMARK [1][]{section.6.1}{6.1 SM analysis - individual cells}{chapter.6}% 47
+\BOOKMARK [2][]{subsection.6.1.1}{6.1.1 DS example cell}{section.6.1}% 48
+\BOOKMARK [2][]{subsection.6.1.2}{6.1.2 OS example cell}{section.6.1}% 49
+\BOOKMARK [1][]{section.6.2}{6.2 SM analysis - cells population}{chapter.6}% 50
+\BOOKMARK [2][]{subsection.6.2.1}{6.2.1 Data ROI groups}{section.6.2}% 51
+\BOOKMARK [2][]{subsection.6.2.2}{6.2.2 RF center positions and SM protocol center-only: all population and per animal}{section.6.2}% 52
+\BOOKMARK [2][]{subsection.6.2.3}{6.2.3 Comparisons between conditions}{section.6.2}% 53
+\BOOKMARK [3][]{subsubsection.6.2.3.1}{6.2.3.A Surround number effect}{subsection.6.2.3}% 54
+\BOOKMARK [3][]{subsubsection.6.2.3.2}{6.2.3.B Surround-RF distance effect and Surround position effect}{subsection.6.2.3}% 55
+\BOOKMARK [3][]{subsubsection.6.2.3.3}{6.2.3.C Surround direction effect}{subsection.6.2.3}% 56
+\BOOKMARK [3][]{subsubsection.6.2.3.4}{6.2.3.D Surround orientation effect}{subsection.6.2.3}% 57
+\BOOKMARK [3][]{subsubsection.6.2.3.5}{6.2.3.E Surround orientation alignment effect \(position and orientation\)}{subsection.6.2.3}% 58
+\BOOKMARK [3][]{subsubsection.6.2.3.6}{6.2.3.F Center and surround relative orientation effect, with center OS preference}{subsection.6.2.3}% 59
+\BOOKMARK [3][]{subsubsection.6.2.3.7}{6.2.3.G Interactions between surround orientation alignment and surround-center relative orientation effects}{subsection.6.2.3}% 60
+\BOOKMARK [3][]{subsubsection.6.2.3.8}{6.2.3.H Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}{subsection.6.2.3}% 61
+\BOOKMARK [3][]{subsubsection.6.2.3.9}{6.2.3.I Surround direction alignment effect \(direction and position\)}{subsection.6.2.3}% 62
+\BOOKMARK [3][]{subsubsection.6.2.3.10}{6.2.3.J Surround and center relative direction effect}{subsection.6.2.3}% 63
+\BOOKMARK [3][]{subsubsection.6.2.3.11}{6.2.3.K Interactions between direction alignment, surround-center relative direction effects and center DS preference}{subsection.6.2.3}% 64
+\BOOKMARK [3][]{subsubsection.6.2.3.12}{6.2.3.L Surround-center order effect \(position and center direction\) and center DS preferrence}{subsection.6.2.3}% 65
+\BOOKMARK [3][]{subsubsection.6.2.3.13}{6.2.3.M Significant average SMI effects overview}{subsection.6.2.3}% 66
+\BOOKMARK [0][]{chapter.7}{7 Discussion and Conclusions}{}% 67
+\BOOKMARK [0][]{section*.84}{Bibliography}{}% 68
+\BOOKMARK [0][]{appendix.A}{A Technology}{}% 69
+\BOOKMARK [1][]{section.A.1}{A.1 Imaging techniques and intrinsic signals: acquiring functional maps of neuronal activity}{appendix.A}% 70
+\BOOKMARK [2][]{subsection.A.1.1}{A.1.1 Intrinsic Signal Optical Imaging: the technique}{section.A.1}% 71
+\BOOKMARK [1][]{section.A.2}{A.2 Calcium indicators and transgenic lines}{appendix.A}% 72
+\BOOKMARK [1][]{section.A.3}{A.3 Imaging techniques: Two photon laser-scanning microscopy}{appendix.A}% 73
+\BOOKMARK [2][]{subsection.A.3.1}{A.3.1 Single-photon Imaging}{section.A.3}% 74
+\BOOKMARK [2][]{subsection.A.3.2}{A.3.2 Direct Imaging}{section.A.3}% 75
+\BOOKMARK [2][]{subsection.A.3.3}{A.3.3 Confocal laser-scanning microscopy}{section.A.3}% 76
+\BOOKMARK [2][]{subsection.A.3.4}{A.3.4 Two photon laser-scanning microscopy }{section.A.3}% 77
+\BOOKMARK [0][]{appendix.B}{B Statistical Tests}{}% 78
+\BOOKMARK [1][]{section.B.1}{B.1 Two-sided sign-tests}{appendix.B}% 79
+\BOOKMARK [1][]{section.B.2}{B.2 Wilcoxon signed rank-sum tests}{appendix.B}% 80
+\BOOKMARK [1][]{section.B.3}{B.3 N-way analysis of variance}{appendix.B}% 81
+\BOOKMARK [1][]{section.B.4}{B.4 Pearson correlation coefficients}{appendix.B}% 82
+\BOOKMARK [1][]{section.B.5}{B.5 Multiple linear regression}{appendix.B}% 83
+\BOOKMARK [1][]{section.B.6}{B.6 Permutation test}{appendix.B}% 84
+\BOOKMARK [1][]{section.B.7}{B.7 Multivariate comparisons: Holm-Bonferroni method}{appendix.B}% 85

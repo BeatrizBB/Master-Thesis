@@ -161,3 +161,8 @@
 \newcommand{\tableref}[1]{Table (\ref{#1})}
 
 \newcommand{\textreg}{$\textsuperscript{\textregistered}$}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+\usepackage{multicol}

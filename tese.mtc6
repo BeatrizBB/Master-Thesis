@@ -1,12 +1,20 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Experiment's outputs}{\reset@font\mtcSfont 51}{section.6.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Images pre-processing: Separating planes and registration}{\reset@font\mtcSfont 52}{section.6.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Suit2p pipeline}{\reset@font\mtcSfont 53}{section.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Data treatment}{\reset@font\mtcSfont 55}{section.6.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Statistical Tests}{\reset@font\mtcSfont 56}{section.6.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.1}Two-sided sign-tests}{\reset@font\mtcSSfont 56}{subsection.6.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.2}Wilcoxon signed rank-sum tests}{\reset@font\mtcSSfont 57}{subsection.6.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.3}N-way analysis of variance}{\reset@font\mtcSSfont 58}{subsection.6.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.4}Pearson correlation coefficients}{\reset@font\mtcSSfont 59}{subsection.6.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.5}Multiple linear regression}{\reset@font\mtcSSfont 59}{subsection.6.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.6}Permutation test}{\reset@font\mtcSSfont 60}{subsection.6.5.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.7}Multivariate comparisons: Holm-Bonferroni method}{\reset@font\mtcSSfont 60}{subsection.6.5.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}SM analysis - individual cells}{\reset@font\mtcSfont 50}{section.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.1.1}DS example cell}{\reset@font\mtcSSfont 50}{subsection.6.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.1.2}OS example cell}{\reset@font\mtcSSfont 53}{subsection.6.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}SM analysis - cells population}{\reset@font\mtcSfont 55}{section.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}Data ROI groups}{\reset@font\mtcSSfont 55}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.2}RF center positions and SM protocol center-only: all population and per animal}{\reset@font\mtcSSfont 57}{subsection.6.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.3}Comparisons between conditions}{\reset@font\mtcSSfont 60}{subsection.6.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.A}Surround number effect}{\reset@font\mtcSSSfont 61}{subsubsection.6.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.B}Surround-RF distance effect and Surround position effect}{\reset@font\mtcSSSfont 62}{subsubsection.6.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.C}Surround direction effect}{\reset@font\mtcSSSfont 63}{subsubsection.6.2.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.D}Surround orientation effect}{\reset@font\mtcSSSfont 64}{subsubsection.6.2.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.E}Surround orientation alignment effect (position and orientation)}{\reset@font\mtcSSSfont 64}{subsubsection.6.2.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.F}Center and surround relative orientation effect, with center OS preference}{\reset@font\mtcSSSfont 65}{subsubsection.6.2.3.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.G}Interactions between surround orientation alignment and surround-center relative orientation effects}{\reset@font\mtcSSSfont 66}{subsubsection.6.2.3.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.H}Interactions between surround orientation alignment, surround-center relative orientation effects and center OS preference}{\reset@font\mtcSSSfont 68}{subsubsection.6.2.3.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.I}Surround direction alignment effect (direction and position)}{\reset@font\mtcSSSfont 70}{subsubsection.6.2.3.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.J}Surround and center relative direction effect}{\reset@font\mtcSSSfont 71}{subsubsection.6.2.3.10}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.K}Interactions between direction alignment, surround-center relative direction effects and center DS preference}{\reset@font\mtcSSSfont 72}{subsubsection.6.2.3.11}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.L}Surround-center order effect (position and center direction) and center DS preferrence}{\reset@font\mtcSSSfont 73}{subsubsection.6.2.3.12}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.3.M}Significant average $\Delta SMI$ effects overview}{\reset@font\mtcSSSfont 74}{subsubsection.6.2.3.13}}

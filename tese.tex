@@ -21,35 +21,43 @@
 \input{0.Inicio/6.Tables.tex}
 \acresetall
 \input{0.Inicio/7.Acronim.tex}
-\input{0.Inicio/8.symbols.tex}
+%\input{0.Inicio/8.symbols.tex}
 %\pagestyle{document}%Fancy head and foot with lines
 \pagestyle{documentsimple}%Simple head
+\pagenumbering{arabic}
 \input{1.Introduction/main.tex}
 \input{2.Theoretical-introduction/main.tex}
 
-\input{3.Technology/main.tex}
+%\input{3.Technology/main.tex}
 \input{4.Technical-implementations/main.tex}
 \input{5.Experimental-methods/main.tex}
 \input{6.Analysis/main.tex}
 \input{7.Results/main.tex}
 
-
 \input{99.Conclusions/conclusions.tex}
-\cleardoublepage
+%\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliography}
 %\bibliographystyle{IEEEtran}
 %\bibliography{02.biblio}
+\renewcommand{\bibfont}{\scriptsize}
+\begin{multicols}{2}
 \printbibliography
-\cleardoublepage
-
-\begin{appendices}
-	\begin{appendix}
+\end{multicols}
+%\printbibliography
+%\twocolumn
+%\cleardoublepage
+\appendix
+%\begin{appendices}
+%	\begin{appendix}
 		\pagenumbering{bychapter}
-		\input{Appendices/appendixA.tex}   
-		\cleardoublepage
-	\end{appendix}
-\end{appendices}
+		\input{3.Technology/main.tex} 
+		%\cleardoublepage
+%	\end{appendix}
+%	\begin{appendix}
+	\input{6.Analysis/5.StatisticalTests.tex}
+%	\end{appendix}
+%\end{appendices}
 
 
 \end{document}

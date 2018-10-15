@@ -11,42 +11,42 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Technology}{21}{chapter.3}
+\contentsline {xchapter}{Technical Implementations}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Technical Implementations}{31}{chapter.4}
+\contentsline {xchapter}{Experimental Methods}{31}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Protocol configurations regarding session extension and trial durations.\relax }}{35}{table.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Configurations regarding the RF mapping protocol stimuli properties.\relax }}{36}{table.caption.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Configurations regarding the tuning mapping protocol stimuli properties.\relax }}{37}{table.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Configurations regarding the SM protocol stimuli properties.\relax }}{37}{table.caption.27}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Experimental Methods}{41}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Protocol configurations regarding session extension and trial durations.\relax }}{45}{table.caption.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Configurations regarding the RF mapping protocol stimuli properties.\relax }}{46}{table.caption.22}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Configurations regarding the tuning mapping protocol stimuli properties.\relax }}{47}{table.caption.24}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Configurations regarding the SM protocol stimuli properties.\relax }}{47}{table.caption.26}
+\contentsline {xchapter}{Analysis}{40}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Analysis}{51}{chapter.6}
+\contentsline {xchapter}{Results}{50}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Two-way ANOVA results for the collinear versus flanking surround effect and iso-oriented versus cross-oriented C-S effect, and interactions.\relax }}{68}{table.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.\relax }}{70}{table.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Significant comparison population results from the presented here, as selected with multivariate Bonferroni correction.\relax }}{74}{table.caption.83}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Results}{61}{chapter.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Two-way ANOVA results for the collinear versus flanking surround effect and iso-oriented versus cross-oriented C-S effect, and interactions.\relax }}{82}{table.caption.68}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.\relax }}{84}{table.caption.74}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Three-way ANOVA results for the collinear versus flanking surround effect, iso-oriented versus cross-oriented C-S effect, and center stimulus (in regards to OS preference), as well as possible 2-way interactions.\relax }}{88}{table.caption.84}
+\contentsline {xchapter}{Discussion and Conclusions}{75}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Discussion and Conclusions}{89}{chapter.8}
+\contentsline {xchapter}{Technology}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Title of AppendixA}{A-1}{appendix.A}
+\contentsline {xchapter}{Statistical Tests}{B-1}{appendix.B}

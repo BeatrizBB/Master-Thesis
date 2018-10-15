@@ -1,5 +1,10 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}System's scheme}{\reset@font\mtcSfont 31}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Bpod}{\reset@font\mtcSfont 33}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Motivation and previous system}{\reset@font\mtcSSfont 33}{subsection.4.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Bpod Hardware implementation, specifications and alterations}{\reset@font\mtcSSfont 35}{subsection.4.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Software: Governing machine protocols and stimulus presentation}{\reset@font\mtcSfont 36}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Animals}{\reset@font\mtcSfont 31}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Visual stimulation}{\reset@font\mtcSfont 31}{section.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Intrinsic signal optical imaging settings}{\reset@font\mtcSfont 31}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Session and trial structure}{\reset@font\mtcSfont 33}{section.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}TPLSM experimental pipeline}{\reset@font\mtcSSfont 33}{subsection.4.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}Stimuli presentation structure}{\reset@font\mtcSSfont 35}{subsection.4.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Specifics of the protocol settings and visual stimuli}{\reset@font\mtcSfont 35}{section.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Receptive Field mapping stimuli}{\reset@font\mtcSSfont 36}{subsection.4.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Tunings mapping stimuli}{\reset@font\mtcSSfont 36}{subsection.4.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Surround Modulation stimuli}{\reset@font\mtcSSfont 37}{subsection.4.5.3}}
